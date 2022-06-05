@@ -1,9 +1,3 @@
-/* Основний колір заголовків/підписів/сайтів #212121 */
-/* Колір абзаців  #757575; */
-/* Синій колір #2196F3 */
-/* Білий кодір #FFFFFF */
-/* колір фона #E5E5E5; */
-
 
 /* Загальні стилі сторінки */
 :root {
@@ -635,39 +629,24 @@ p {
     }
 
 
-/* Опис роботи*/
-.descriptions {
+
+
+    /* Особливості*/
+
+
+.features__list {
     display: flex;
 }
 
-.descriptions-items {
+.features__item {
      width: 270px;
 }
 
-.descriptions-items:not(:last-child) {
+.features__item:not(:last-child) {
     margin-right: 30px;
 }
-  
-.descriptions-name {
-    margin-bottom: 10px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    }
-
-.descriptions-text {
-    color: var(--style-text);
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    }
-
-/* Іконки сексії опису */
-
-.descriptions-icon {
+.features__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -680,52 +659,33 @@ p {
     border-radius: 4px;
 }
 
-.img-icon {
+.features__img {
     fill: currentColor;
 }
+  
+.features__name {
+    margin-bottom: 10px;
 
-
-
-/* Чим ми займаємось */
-/* Команда */
-
-.images {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.team-item {
-    background-color: var(--style-fon-white);
-    width: 370px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-
-.team {
-    text-align: center;
-    background-color: var(--style-button);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     }
 
-.occupation-items, 
-.team-items {
-    display: flex;
-    justify-content:space-between;
+.features__text {
+    color: var(--style-text);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    }
 
-}
 
-.occupation-item,
-.team-item {
-    margin-right: 30px;   
-   }
 
-.occupation-item:last-child,
-.team-item:last-child {
-    margin-right: 0px;
-}
+    /* Чим ми займаємось */
 
-.occupation-name,
-.our-team {
+
+.work__name {
     margin-bottom:50px;
 
     font-weight: 700;
@@ -735,39 +695,30 @@ p {
     text-align: center;
     }
 
-.text-conteiner {
-padding: 30px 32px;
+.work__list {
+    display: flex;
+    justify-content:space-between;
 
 }
 
-.team-name {
-   margin-bottom: 10px;
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    }
-
-.team-text {
-    margin-bottom: 16px;
-    
-    color: var(--style-text);
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    }
-
-
-    /* Позиціюваня техксту на картці */
-
-.occupation-item{
+.work__item {
     position: relative;
     z-index: 8;
 
-  }
+    margin-right: 30px;   
+    }
 
-.occupation-text {
+.work__item:last-child {
+    margin-right: 0px;
+}
+
+.work__images {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.work__text {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -793,6 +744,71 @@ padding: 30px 32px;
 
 
 
+    /* КОМАНДА */
+
+
+.team {
+    text-align: center;
+    background-color: var(--style-button);
+    }
+
+.team__title {
+    margin-bottom:50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    }
+
+.team__list  {
+    display: flex;
+    justify-content:space-between;
+}
+    
+.team__item {
+    width: 370px;
+
+    background-color: var(--style-fon-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team__item:not(last-child) {
+    margin-right: 30px;   
+}
+
+.team__images {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.team--side {
+    padding: 30px 32px;
+    }
+
+.team__name {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    }
+
+.team__text {
+    margin-bottom: 16px;
+    
+    color: var(--style-text);
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    }
+
+
+   
 
     /*Мережеві іконки  */
 
@@ -804,11 +820,11 @@ padding: 30px 32px;
     margin: 0;
     }
 
-.socials-item:not(:last-child) {
+.socials__item:not(:last-child) {
     margin-right: 10px;
     }
 
-.social-link {
+.socials__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -817,29 +833,28 @@ padding: 30px 32px;
 
     background-color: var(--style-fon-white);
     color: var(--social-st);
-    transition: background-color var(--animation);
+    fill: currentColor;
+    transition: background-color var(--animation), fill var(--animation);
 
     border-radius: 50%;
 }
 
-.social-link:hover,
-.social-link:focus {
+.socials__link:hover,
+.socials__link:focus {
     background-color: var(--style-blue);
     color: var(--style-fon-white);
 }
     
-.social-link .social-icon {
+.socials__icon {
     fill: currentColor;
     transition: fill var(--animation);
     }
 
 
 
+    /* Постійні клієнти */
 
-
-/* Постійні клієнти */
-
-.gallery-title {
+.gallery__title {
     margin-bottom:50px;
 
     font-weight: 700;
@@ -849,38 +864,38 @@ padding: 30px 32px;
     text-align: center;
 }
 
-.gallery-list {
+.gallery__list {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.gallery-item:not(:last-child) {
+.gallery__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.gallery-link {
-    background-color: var(--style-fon-white);
-    color: var(--social-st);
-
+.gallery__link {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 170px;
     height: 92px;
 
+    background-color: var(--style-fon-white);
+    color: var(--social-st);
+
     border: 1px solid var(--social-st);
     border-radius: 4px;
     transition: border var(--animation);
 }
 
-.gallery-link:hover,
-.gallery-link:focus {
+.gallery__link:hover,
+.gallery__link:focus {
     border: 1px solid var(--style-blue);
     color: var(--style-blue);
     }
 
-.img {
+.gallery__img {
     fill: currentColor;
     transition: fill var(--animation);
 }
