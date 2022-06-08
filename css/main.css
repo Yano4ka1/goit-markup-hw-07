@@ -1063,20 +1063,21 @@ p {
   transition: box-shadow var(--animation), -webkit-box-shadow var(--animation);
 }
 
-.portfolio__link:hover, .portfolio__link:focus {
+.portfolio__link :hover,
+.portfolio__link :focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio__group-anamation {
-  position: relative;
-  overflow: hidden;
 }
 
 .portfolio__images {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.portfolio__group-anamation {
+  position: relative;
+  overflow: hidden;
 }
 
 .portfolio__animation-text {
@@ -1102,10 +1103,11 @@ p {
   transition: transform var(--animation), opacity var(--animation), -webkit-transform var(--animation);
 }
 
-.portfolio__animation-text:hover, .portfolio__animation-text:focus {
+.portfolio__link:hover .portfolio__animation-text,
+.portfolio__link:focus .portfolio__animation-text {
+  opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  opacity: 1;
 }
 
 .portfolio__group {
